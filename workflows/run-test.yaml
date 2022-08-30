@@ -1,0 +1,19 @@
+name: Hola
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-18.04
+
+    steps:
+    - name: echo the message
+      run: echo "Hola Fabio"
+    - name: Dime la fecha
+      run: date
+    - run: ls -l
